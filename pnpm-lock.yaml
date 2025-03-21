@@ -986,7 +986,7 @@ packages:
       ci-info: 4.0.0
       clsx: 2.0.0
       common-ancestor-path: 1.0.1
-      cookie: 0.6.0
+      cookie: 0.7.0
       debug: 4.3.4
       deterministic-object-hash: 2.0.2
       devalue: 4.3.2
