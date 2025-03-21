@@ -23,7 +23,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          path: ~/Desktop/setimo-semestre/desenvolvimento-de-software-livre-mac0470/beavct.github.io
+          # path: ~/Desktop/setimo-semestre/desenvolvimento-de-software-livre-mac0470/beavct.github.io
           package-manager: pnpm@latest 
         # with:
           # path: . # The root location of your Astro project inside the repository. (optional)
