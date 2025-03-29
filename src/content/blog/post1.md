@@ -18,7 +18,11 @@ No dia **12 de março**, foi realizado o segundo tutorial, [*Building and bootin
 
 ### Tutorial 3 — Configuração de Build e Módulos do Kernel
 
-Ainda na aula do dia **19 de março**, realizamos o terceiro tutorial, [*Introduction to Linux kernel build configuration and modules*](https://flusp.ime.usp.br/kernel/modules-intro/), cujo foco foi a criação e teste de módulos simples para o kernel. Felizmente, esse foi o tutorial mais tranquilo até agora — consegui completar todas as etapas sem dificuldades ou erros.
+Ainda na aula do dia **19 de março**, realizamos o terceiro tutorial, [*Introduction to Linux kernel build configuration and modules*](https://flusp.ime.usp.br/kernel/modules-intro/), cujo foco foi a criação e teste de módulos simples para o kernel. Felizmente, esse foi o tutorial tranquilo — consegui completar todas as etapas sem dificuldades ou erros.
+
+### Tutorial 4 — Introdução a Drivers de Dispositivo de Caracteres no Linux  
+
+No dia **26 de março**, realizamos o quarto tutorial, [*Introduction to Linux kernel Character Device Drivers*](https://flusp.ime.usp.br/kernel/char-drivers-intro/), no qual exploramos os conceitos fundamentais dos *character devices* no Linux. O tutorial apresentou a estrutura e funcionamento desse tipo de dispositivo, seguido da implementação de um driver simples para ilustrar os conceitos discutidos. Mais uma vez a realização do tutorial foi tranquila.
 
 ---
 
