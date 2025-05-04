@@ -15,6 +15,8 @@ Junto com a minha dupla, Gabriela Victor, escolhemos como tarefa inicial resolve
 
 eram **exatamente idênticas** em sua implementação. Ambas deveriam realizar operações específicas para os vetores `als` e `uvb`, respectivamente, mas descobrimos que **a função `zopt2201_write_scale_uvb_by_idx` estava incorretamente acessando os campos de `als`**, o que potencialmente causaria comportamentos errôneos no driver.
 
+![Função antes da refatoração](/post2_imgs/funcao_antes.png)
+
 ## O problema
 
 - **Duplicação total de código** entre as duas funções.
@@ -26,9 +28,7 @@ A solução proposta foi a **criação de uma função genérica** que encapsula
 
 Criamos a seguinte função:
 
-```c
-static int zopt2201_write_scale_by_idx(struct zopt2201_data *data, int idx, struct zopt2201_scale *zopt2201_scale_array);
-```
+![Função depois da refatoração](/post2_imgs/funcao_depois.png)
 
 Que possui um parâmetro adicional, o vetor correto a ser utilizado. Assim, conseguimos reutilizar a lógica comum e garantir que cada chamada manipulasse apenas o vetor apropriado.
 
@@ -38,14 +38,13 @@ Para que a função genérica funcionasse corretamente, foi necessário **nomear
 
 Refatoramos o código definindo explicitamente a estrutura como `zopt2201_scale`:
 
-```c
-struct zopt2201_scale{
-   unsigned int scale, uscale; /* scale factor as integer + micro */
-   u8 gain; /* gain register value */
-   u8 res; /* resolution register value */
-};
-```
+![Estrutura antes da refatoração](/post2_imgs/struct_antes.png)
+![Estrutura depois da refatoração](/post2_imgs/struct_depois.png)
 
 ## Envio do patch
-Com as alterações implementadas e compiladas com sucesso, redigimos a mensagem de commit explicando a refatoração e a correção do bug. Inicialmente, enviamos o patch para os monitores da disciplina para revisão. Após a aprovação, o patch foi submetido para a mailing list do subsistema IIO, seguindo as boas práticas de contribuição com o Kernel Linux.
+
+Com as alterações implementadas e compiladas com sucesso, redigimos a mensagem de commit explicando a refatoração e a correção do bug. Inicialmente, enviamos o patch para os monitores da disciplina para revisão. Após a aprovação, submetemos o patch para a [mailing list do subsistema IIO](https://lore.kernel.org/linux-iio/20250424002144.23260-1-beatrizvianacosta16@gmail.com), seguindo as boas práticas de contribuição com o Kernel Linux.
+
+Pouco tempo depois, recebemos retorno do mantenedor do subsistema, Jonathan Cameron, que revisou o patch, respondeu à thread na mailing list e aprovou a modificação. Como resultado, o patch foi aceito, recebendo o _Signed-off-by_ do mantenedor no [commit publicado no kernel.org](https://git.kernel.org/pub/scm/linux/kernel/git/jic23/iio.git/commit/?h=testing&id=7b156cc6c07e0445516be1cf693ff4d5982361fd).
+
 
