@@ -114,3 +114,9 @@ Ao verificar esse arquivo, confirmamos que **São Bernardo do Campo** estava com
     - **Validação** das coordenadas antes de realizar a requisição para a API;
     - Mensagens de log mais **descritivas** em caso de erro;
     - **Notificação mais clara** ao usuário final indicando o motivo do erro (por exemplo, cidade com coordenadas inválidas).
+
+Nova tela de erro do aplicativo de Clima:
+![Tela de localização inválida](/post3_imgs/clima_tela.png)
+
+Impressão de erro no console:
+![Erro no console](/post3_imgs/console.png)
