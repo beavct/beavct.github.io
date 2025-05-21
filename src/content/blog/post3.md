@@ -10,7 +10,7 @@ Durante a segunda parte da disciplina MAC0470, minha dupla, Gabriela Victor, e e
 
 ## Escolha da Contribuição
 
-Iniciamos explorando issues marcadas como *newcomers* em diferentes aplicativos do ecossistema GNOME, mas nenhuma delas despertou nosso interesse. Em seguida, analisamos outras issues abertas e encontramos [esta](https://gitlab.gnome.org/GNOME/gnome-weather/-/issues/437), no aplicativo **GNOME Weather**, que nos chamou a atenção.
+Iniciamos explorando issues marcadas como *newcomers* em diferentes aplicativos do ecossistema GNOME, mas nenhuma delas despertou nosso interesse. Em seguida, analisamos outras issues abertas e encontramos [Weather information not fetched correctly (0°C) for some cities supported by YR.no (ex: São Bernardo do Campo)](https://gitlab.gnome.org/GNOME/gnome-weather/-/issues/437), no aplicativo **GNOME Weather**, que nos chamou a atenção.
 
 A issue era recente, estava conectada a outras tarefas e o responsável pelo app Weather (e também pelo Calendar) era Jess Fortin.
 
