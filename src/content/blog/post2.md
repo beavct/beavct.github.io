@@ -1,6 +1,6 @@
 ---
 title: "Contribuição com o Kernel Linux"
-description: "Nossa primeira contribuição para o subsistema IIO do Kernel Linux"
+description: "Nossa primeira contribuição para o subsistema IIO do Kernel Linux."
 pubDate: "Mar 23 2025"
 heroImage: "/post2_img.jpg"
 tags: ["MAC0470", "Kernel", "IIO", "Linux"]

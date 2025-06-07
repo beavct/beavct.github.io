@@ -1,9 +1,9 @@
 ---
-title: "Setup do ambiente de desenvolvimento"
-description: "Como foi a configuração de ambiente para o desenvolvimento do kernel Linux."
+title: "Setup do ambiente de desenvolvimento Kernel Linux"
+description: "Como foi a configuração de ambiente para o desenvolvimento do Kernel Linux."
 pubDate: "Mar 23 2025"
 heroImage: "/post1_img.webp"
-tags: ["MAC0470"]
+tags: ["MAC0470", "Linux", "Kernel"]
 ---
 
 Este post relata minhas experiências iniciais com a configuração de ambiente para desenvolvimento do kernel Linux, no contexto da disciplina **Desenvolvimento de Software Livre**. Ao longo das primeiras aulas, realizamos tutoriais práticos com o objetivo de preparar um ambiente de testes completo — desde a instalação de ferramentas de virtualização até a compilação e execução de um kernel customizado. Esses exercícios foram fundamentais para compreender os primeiros passos no desenvolvimento de software de código aberto em larga escala, como o próprio kernel Linux.
