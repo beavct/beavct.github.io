@@ -1,6 +1,6 @@
 ---
-title: "Setup do ambiente de desenvolvimento Debian"
-description: "Relato da experiência inicial com a configuração do ambiente Debian."
+title: "Setup do ambiente de desenvolvimento e contribuição Debian"
+description: "Relato da experiência inicial com a configuração do ambiente e contribuição Debian."
 pubDate: "Jun 7 2025"
 heroImage: "/post4_img.png"
 tags: ["MAC0470", "Debian"]
@@ -37,3 +37,16 @@ Durante a execução do tutorial, era necessário configurar a **integração en
 Apesar dos contratempos, tudo acabou funcionando bem. Minha dupla criou a [issue no Debian Brasil Team](https://salsa.debian.org/debian-brasil-team/docs/-/issues/499), e eu subi os arquivos e abri o *Merge Request*. Os comandos em si foram bastante tranquilos, então, mesmo tendo que lidar com problemas técnicos ao mesmo tempo, consegui realizar minha parte sem dificuldades.
 
 Mais tarde, percebi que tanto o Windows quanto o GRUB estavam mais lentos após as mudanças feitas. Descobri que o motivo era a **competição por recursos de virtualização entre o VirtualBox e o Hyper-V**, o sistema nativo de virtualização do Windows. Para resolver o problema, seria necessário desativar manualmente um dos dois. Como já havíamos concluído a contribuição para o Debian, optei por **desinstalar a máquina virtual**, o que resolveu os problemas de desempenho.
+
+Alguns dias depois, o **Lucas Kanashiro** revisou nossa contribuição e identificou um pequeno problema no arquivo `d/changelog`: havia uma linha duplicada referente à atualização da versão dos padrões (`standards-version`). 
+
+
+```
++
+3	
++  * d/control: bump standards-version to 4.7.2
+4	
++  * d/control: bump standards-version to 4.7.2
+```
+
+Felizmente, ele mesmo corrigiu o erro e realizou o *merge* da nossa branch com sucesso:

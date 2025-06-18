@@ -1,7 +1,7 @@
 ---
 title: "Contribuição com o GNOME"
 description: "Relato da experiência de contribuição para a comunidade GNOME durante a disciplina MAC0470."
-pubDate: "Mar 23 2025"
+pubDate: "May 23 2025"
 heroImage: "/postm_img.jpg"
 tags: ["MAC0470", "GNOME", "GNOME Weather", "libgweather"]
 ---
