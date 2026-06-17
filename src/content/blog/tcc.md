@@ -40,4 +40,4 @@ Este trabalho propõe a migração de dados geoespaciais para uma arquitetura ba
 - 📄 [Proposta](/Proposta_de_TCC.pdf)
 - 📄 [Pôster](/Proposta_de_TCC.pdf)
 - 📄 [Monografica](/Proposta_de_TCC.pdf)
-- 📄 [Repositório no Github](/Proposta_de_TCC.pdf)
+- 📄 [Repositório no Github](https://github.com/beavct/mac0499-tcc)
