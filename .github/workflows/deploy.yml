@@ -24,7 +24,7 @@ jobs:
         uses: withastro/action@v3
         with:
           # path: ~/Desktop/setimo-semestre/desenvolvimento-de-software-livre-mac0470/beavct.github.io
-          package-manager: pnpm@latest 
+          package-manager: pnpm@9
         # with:
           # path: . # The root location of your Astro project inside the repository. (optional)
           # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
